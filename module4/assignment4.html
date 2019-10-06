@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Hunter Hackley | INFO 2349 | Assignment #5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="_css/Hackley_a5.css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Hunter Hackley
+     index.html
+     INFO2439
+     Thoendel
+     10/5/19
+-->
+    <form action="http://lolberding.portfolios.mccinfo.net/info_survey/bistrosurvey_insert.php" method="post">
+      <input name="recipient" type="hidden" value="hkhackley@mail.mccneb.edu">
+      <div data-role="page" id="assignment4">
+        <header>
+          <div data-role="header" data-position="fixed" data-id="header" class="top-header" data-theme="a">
+            <a href="../index.html" data-icon="home" rel="external">Home</a>
+            <h1>Hunter Hackley</h1>
+          </div>
+        </header>
+        <div data-role="main" class="ui-content">
+          <h1>Assignment #4</h1>
+          <h1>Bistro Customer Survey</h1>
+          <form action="echo.html" method="post">
+
+            <div class="ui-field-contain">
+              <legend>How would you rate your meal today?</legend>
+              <select name="meal" id="meal_rate">
+                <option value="" disabled selected hidden>Select Rating</option>
+                <option value="meal_rating1">1-Poor</option>
+                <option value="meal_rating2">2-Needs Work</option>
+                <option value="meal_rating3">3-Fair</option>
+                <option value="meal_rating4">4-Good</option>
+                <option value="meal_rating5">5-Excellent</option>
+              </select>
+            </div>
+            <div class="ui-field-contain">
+              <legend>How would you rate your service today?</legend>
+              <select name="service" id="service">
+                <option value="" disabled selected hidden>Select Rating</option>
+                <option value="service_rating1">1-Poor</option>
+                <option value="service_rating2">2-Needs Work</option>
+                <option value="service_rating3">3-Fair</option>
+                <option value="service_rating4">4-Good</option>
+                <option value="service_rating5">5-Excellent</option>
+              </select>
+            </div>
+            <div class="ui-field-contain">
+              <legend>How would your overall experience today?</legend>
+              <select name="experience" id="experience">
+                <option value="" disabled selected hidden>Select Rating</option>
+                <option value="experice_rating1">1-Poor</option>
+                <option value="experience_rating2">2-Needs Work</option>
+                <option value="experience_rating3">3-Fair</option>
+                <option value="experience_rating4">4-Good</option>
+                <option value="experience_rating5">5-Excellent</option>
+              </select>
+            </div>
+            <fieldset data-role="controlgroup" data-type="horizontal">
+              <legend>Would you recommend this restaurant to a friend?</legend>
+
+              <input type="radio" name="Y1" id="Y1" value="Yes">
+              <label for="Y1">Yes</label>
+
+              <input type="radio" name="N1" id="N1" value="No">
+              <label for="N1">No</label>
+            </fieldset>
+            <label for="firstname">
+              Name
+              <input mbsc-input id="f_name" type="text" placeholder="First Name" />
+            </label>
+            <label for="email">
+              Email
+              <input mbsc-input id="email" type="text" placeholder="Email Address" />
+            </label>
+            <h1></h1>
+            <input type="submit" name="sumbit" value="Submit Feedback">
+
+            <div data-role="footer" data-position="fixed" data-id="footernav" data-theme="b">Contact: <a href="mailto:hkhackley@mail.mccneb.edu" class="ui-btn-active">Hunter H</a></div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </div>
+  </body>
+
+</html>
